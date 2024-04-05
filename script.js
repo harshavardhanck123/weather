@@ -1,5 +1,9 @@
-var res = fetch(" https://restcountries.com/v3.1/all")
-res.then((data) => data.json()).then((data1) => foo(data1))
+async function bar(){
+var res = await fetch(" https://restcountries.com/v3.1/all")
+var res1=await res.json()
+foo(res1)
+}
+bar()
 
 var contain = document.createElement("div")
 contain.className = "container"
@@ -7,7 +11,7 @@ contain.className = "container"
 var row = document.createElement("div")
 row.className = "row gy-4"
 
-function foo(data1) {
+ function foo(data1) {
     for(var i=0;i<data1.length;i++)
     {
         var names=data1[i].name.common
