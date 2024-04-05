@@ -22,7 +22,7 @@ row.className = "row gy-4"
         var country=data1[i].cioc
     var column = document.createElement("div")
     column.className = "col-md-4"
-    column.innerHTML=`<div class="card mt-3" >
+    column.innerHTML=`<div class="card mt-3" style="border: 2px solid white;" >
     <h5 class="card-header text-center" style="background-color:black;color:white;" >${names}</h5>
     <div class="d-flex justify-content-center align-items-center" style="height: 200px;background-image:linear-gradient(to right,#BDB294,#58655E)">
           <img class="card-img-top img-fluid " src="${flag}" alt="Card image cap">
