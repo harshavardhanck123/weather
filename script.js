@@ -29,7 +29,7 @@ row.className = "row gy-4"
           <img class="card-img-top img-fluid " src="${flag}" alt="Card image cap">
         </div>
     <div class="card-body text-center" style="background-image:linear-gradient(to right,#BDB294,#58655E);color:white">
-      <p class="card-text">Capital: ${cap}  <br> Region: ${re}<br> Country Code: ${country}</p>
+      <p class="card-text">Capital: ${cap}  <br> Region: ${re}<br> Country Code: ${country}<br> LatLng: ${lat},${lon}</p>
       <a href="#" class="btn btn-primary weather-btn" data-lat="${lat}" data-lon="${lon}" style="background-color: transparent; color: inherit; border-color: inherit;">Click for Weather</a>
     </div>
   </div>`
